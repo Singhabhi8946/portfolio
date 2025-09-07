@@ -147,13 +147,13 @@ span{
 }
 @keyframes words {
     0%,20%{
-        content: "Blockchain Devel.";
+        content: "Developer.";
     }
     21%,40%{
         content: "Graphic Designer";
     }
     41%,60%{
-        content: "Influencer";
+        content: "Photographer";
     }
     61%,80%{
         content: "blogger";
@@ -188,7 +188,7 @@ span{
     background-size: cover;
     background-position: center center;
     margin: 5px;
-    box-shadow: 0 5px 5px 5px purple;
+    box-shadow: 0 15px 10px 0px rgb(98, 0, 128);
     animation: animate 5s ease-in-out infinite;
     /* transition: all 1s ease-in-out infinite; */
 
@@ -391,18 +391,18 @@ span{
 }
 
 
-.services h2{
+.experience h2{
     margin-bottom: 5rem;
 }
 
-.services-container{
+.experience-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap:2rem;
 }
-.services-container .services-box{
+.experience-container .experience-box{
     flex: 1 1 10rem;
     background-color: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
@@ -412,31 +412,31 @@ span{
     transition: .5s ease;
 
 }
-.services-container .services-box:hover{
+.experience-container .experience-box:hover{
     border-color: var(--main-color);
     transform: scale(1.02);
 }
-.services-box i{
+.experience-box i{
     font-size: 7rem;
     color: var(--main-color);
 
 }
-.services-box h3{
+.experience-box h3{
     font-size: 2rem;
 
 }
-.services-box p{
+.experience-box p{
     font-size: 1.2rem;
     margin: 1rem 0 3rem;
 }
 
-.portfolio{
+.projects{
     background: var(--second-bg-color);
 }
-.portfolio h2{
+.projects h2{
     margin-bottom: 4rem;
 }
-.portfolio-container {
+.projects-container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
@@ -444,22 +444,22 @@ span{
 
 }
 
-.portfolio-container .portfolio-box {
+.projects-container .projects-box {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
 }
-.portfolio-box img {
+.projects-box img {
     width: 100%;
     transition: .5s ease;
 }
 
-.portfolio-box:hover img{
+.projects-box:hover img{
     transform: scale(1.1) ;
 }
-.portfolio-box .portfolio-layer {
+.projects-box .projects-layer {
     position:absolute;
     bottom: 0;
     left: 0;
@@ -477,19 +477,19 @@ span{
 
 }
 
-.portfolio-box:hover .portfolio-layer{
+.projects-box:hover .projects-layer{
     transform: translateY(0);
 }
-.portfolio-layer h4{
+.projects-layer h4{
     font-size: 3rem;
 }
 
-.portfolio-layer p{
+.projects-layer p{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 
 }
-.portfolio-layer a{
+.projects-layer a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -499,7 +499,7 @@ span{
     border-radius: 50%;
 
 }
-.portfolio-layer a i {
+.projects-layer a i {
     font-size: 2rem;
     color: var(--second-bg-color);
 }
@@ -600,7 +600,7 @@ span{
     .services{
         padding-bottom: 7rem;
     }
-    .portfolio{
+    .projects{
         padding-bottom: 7rem;
     }
 
@@ -672,18 +672,18 @@ span{
 
     }
 
-    .portfolio h2 {
+    .projects h2 {
         margin-bottom: 3rem;
     }
 
-    .portfolio-container {
+    .projects-container {
         grid-template-columns: repeat(2,1fr);
     }
 
 }
 
 @media (max-width: 617px){
-    .portfolio-container{
+    .projects-container{
         grid-template-columns: 1fr;
 
     }
